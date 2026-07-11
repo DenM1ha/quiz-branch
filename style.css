@@ -1,0 +1,159 @@
+/* Базові налаштування */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #e0e0e0;
+    color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.app-container {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 4px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    border-top: 8px solid #00247d;
+    /* Royal Blue */
+    border-bottom: 8px solid #cf142b;
+    /* Union Jack Red */
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+h2 {
+    color: #00247d;
+    margin-top: 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Кнопки відповідей */
+#answers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.answer-btn {
+    padding: 14px 20px;
+    border: 2px solid #00247d;
+    background: white;
+    border-radius: 0;
+    /* Більш строгий стиль */
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: #00247d;
+    transition: all 0.2s ease;
+    font-family: inherit;
+    font-weight: bold;
+}
+
+.answer-btn:hover:not(:disabled) {
+    background-color: #00247d;
+    color: white;
+}
+
+.answer-btn:disabled {
+    cursor: default;
+    opacity: 0.8;
+}
+
+/* Стани відповідей */
+.correct {
+    background-color: #006837 !important;
+    /* British Green */
+    border-color: #006837 !important;
+    color: white !important;
+}
+
+.wrong {
+    background-color: #cf142b !important;
+    /* Union Jack Red */
+    border-color: #cf142b !important;
+    color: white !important;
+}
+
+/* Кнопки керування */
+#start-btn,
+#restart-btn {
+    padding: 14px 28px;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    background-color: #cf142b;
+    /* Red Button */
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.2s;
+    font-family: inherit;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#start-btn:hover,
+#restart-btn:hover {
+    background-color: #a30e20;
+}
+
+/* Вибір теми */
+#topic-selection {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.topic-btn {
+    padding: 16px;
+    border: 2px solid #00247d;
+    background-color: white;
+    color: #00247d;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.2s;
+    font-family: inherit;
+    border-radius: 0;
+}
+
+.topic-btn:hover {
+    background-color: #00247d;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Утиліти */
+.hide {
+    display: none !important;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.result-text {
+    font-size: 1.4rem;
+    margin: 1rem 0;
+    color: #00247d;
+    font-weight: bold;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="app-container">
+        <div id="start-screen" class="screen">
+            <!-- Завдання 1 - Наповнення HTML -->
+            <h2>English Word Trainer</h2>
+            <p style="margin-bottom: 5px; color: #00247d; font-weight: bold;">Choose a Topic:</p>
+            <div id="topic-selection">
+                <button class="topic-btn" data-topic="basics">Basics (Основи)</button>
+                <button class="topic-btn" data-topic="phrases">Phrases (Фрази)</button>
+                <button class="topic-btn" data-topic="literature">Literature (Складні)</button>
+            </div>
+        </div>
+
+        <div id="quiz-screen" class="screen hide ">
+            <!-- Блок з таймером та балами -->
+            <div class="header">
+                <span id="timer">Час: 15</span>
+                <span id="score-display">Бали: 0</span>
+            </div>
+            <h2 id="question-text">Запитання 1</h2>
+            <div id="answers-container">
+            </div>
+        </div>
+
+        <div id="result-screen" class="screen hide">
+            <!-- Блок з результатом -->
+            <h2>Квіз завершено!</h2>
+            <p class="result-text"></p>
+            <button id="restart-btn">Спробувати ще</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
